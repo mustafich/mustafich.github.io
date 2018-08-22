@@ -982,6 +982,13 @@ h4 {
     margin-bottom: 30px;
   }
 
+  .menu-menu ul li a:hover {
+    color: #ffae00 !important;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  }
+
   .team {
     padding: 0 20px;
     -ms-flex-wrap: wrap;

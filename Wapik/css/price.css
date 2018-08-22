@@ -1,0 +1,141 @@
+.prising {
+  background: #eef1ec;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.prising-back_menu {
+  width: 100%;
+  height: 85px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.prising-back_menu__logo {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+}
+
+.prising-back_menu__logo a {
+  color: #83a7a5;
+}
+
+.prising-back_menu__logo i {
+  color: #83a7a5;
+}
+
+.prising-back_menu__logo h1 {
+  font-family: "ProximaNova";
+  font-size: 28.75px;
+  color: #83a7a5;
+}
+
+.prising-back_menu__right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.prising-back_menu__right li :hover {
+  background: #6d8383;
+}
+
+.prising-back_menu__right a {
+  padding: 11px;
+  margin-left: 19px;
+  color: #83a7a5;
+}
+
+.prising-back_menu__mob {
+  display: none;
+}
+
+.prising-back_menu__mob a {
+  color: #83a7a5;
+  font-family: "ProximaNova";
+  font-size: 28.75px;
+}
+
+.prising-welkome {
+  margin-top: 215px;
+  max-width: 512px;
+  min-width: 310px;
+}
+
+.prising-welkome h1 {
+  color: #83a7a5;
+  margin-bottom: 20px;
+}
+
+.prising-welkome h2 {
+  color: #83a7a5;
+  line-height: 25px;
+  margin-bottom: 36px;
+}
+
+.prising-welkome a {
+  color: #83a7a5;
+  padding: 20px;
+  background: #6fb048;
+}
+
+.prising-welkome a a:hover {
+  background: red;
+}
+
+#mob:checked ~ .prising-back_menu__right {
+  display: block;
+}
+
+.prising-welkome a:hover {
+  background: #6d8383;
+}
+
+.textaPricing {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 997px) {
+  .prising-back_menu__right {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    display: none;
+  }
+
+  .prising-back_menu__right ul {
+    display: block;
+  }
+
+  .prising-back_menu__right ul li {
+    margin-top: 15px;
+  }
+
+  .prising-back_menu__right ul li a {
+    font-size: 16px;
+  }
+
+  .prising-back_menu__mob {
+    display: block;
+  }
+
+  .prising-back_menu__mob h1 {
+    color: #6d8383 !important;
+  }
+}

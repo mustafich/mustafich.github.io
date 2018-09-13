@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Store</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/png_fav.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/png_fav.png">
+    <link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid.css">
+    <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+<body>
+
+
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div class="main-text"><h1>Одежда для девочек</h1></div>
+            <div class="main-container">
+                <div class="main-container_filters">
+                    <div class="main-container_filters-inner">
+                        <div class="select option">
+                            <div class="block"><span class="inner-text">Категории</span><span class="hide"></span>
+                            </div>
+                            <ul class="scroll">
+                                <li data-option="Все         ">Все</li>
+                                <li data-option="Платья      ">Платья</li>
+                                <li data-option="Юбки        ">Юбки</li>
+                                <li data-option="Шорты       ">Шорты</li>
+                                <li data-option="ШорКолготы  ">ШорКолготы</li>
+                                <li data-option="Лосины      ">Лосины</li>
+                                <li data-option="Рубашки     ">Рубашки</li>
+                                <li data-option="Футболки    ">Футболки</li>
+
+                            </ul>
+                        </div>
+                        <div class="select size">
+                            <div class="block"><span class="inner-text">Размер</span><span class="hide"></span></div>
+                            <ul class="scroll">
+                                <li data-size="50     "> 50</li>
+                                <li data-size="51     "> 51</li>
+                                <li data-size="52    "> 52</li>
+                                <li data-size="53    "> 53</li>
+                                <li data-size="54  "> 54</li>
+                                <li data-size="55    "> 55</li>
+                                <li data-size="56   "> 56</li>
+                                <li data-size="57  "> 57</li>
+                                <li data-size="58  "> 58</li>
+                            </ul>
+                        </div>
+
+                        <div class="select color">
+                            <div class="block"><span class="inner-text">Цвет</span><span class="hide"></span></div>
+                            <ul class="scroll">
+                                <li data-color="red     "> red</li>
+                                <li data-color="green   "> green</li>
+                                <li data-color="blue    "> blue</li>
+                                <li data-color="pink    "> pink</li>
+                                <li data-color="yellow  "> yellow</li>
+                                <li data-color="gold    "> gold</li>
+                                <li data-color="black   "> black</li>
+                                <li data-color="purple  "> purple</li>
+                            </ul>
+                        </div>
+                        <div class="select materials">
+                            <div class="block"><span class="inner-text">Материал</span><span class="hide"></span></div>
+                            <ul class="scroll">
+                                <li data-materials="Все    "> Все</li>
+                                <li data-materials="100% хлопок     "> 100% хлопок</li>
+                                <li data-materials="Трикотаж   "> Трикотаж</li>
+                                <li data-materials="Шерсть    "> Шерсть</li>
+                                <li data-materials="Джинсовый    "> Джинсовый</li>
+                                <li data-materials="Составной  "> Составной</li>
+                            </ul>
+                        </div>
+                        <div class="main-container_filters-inner_button-filter">
+                           <p> Применить фильтр</p>
+                        </div>
+                        <div class="main-container_filters-inner_but"><i class="fa fa-filter" aria-hidden="true"></i></div>
+                    </div>
+
+                </div>
+                <div class="main-container_goods">
+                    <div class="main-container_goods_basic">
+                        <div class="main-container_goods_basic__block">
+                            <div class="main-container_goods_basic__block___box">
+                                <div class="main-container_goods_basic__block___box____newProduct"><p>НОВИНКА</p></div>
+                                <div class="main-container_goods_basic__block___box____img">
+                                    <img src="img/dress1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="main-container_goods_basic__block___stars">
+                                <div class="stars" data-stars="1">
+                                    <svg height="25" width="23" class="star rating" data-rating="1">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="2">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="3">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="4">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="5">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="main-container_goods_basic__block___name">
+                                <p class="name_goods">Свитер в полоску</p>
+                            </div>
+                            <div class="main-container_goods_basic__block___price">
+                                <div class="main-container_goods_basic__block___price____line"></div>
+                                <p class="price">123 грн</p>
+                            </div>
+                        </div>
+                        <div class="main-container_goods_basic__block">
+                            <div class="main-container_goods_basic__block___box">
+                                <div class="main-container_goods_basic__block___box____hitOfSell"><p>Хит продажи</p></div>
+                                <div class="main-container_goods_basic__block___box____img">
+                                    <img src="img/dress2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="main-container_goods_basic__block___stars">
+                                <div class="stars" data-stars="1">
+                                    <svg height="25" width="23" class="star rating" data-rating="1">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="2">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="3">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="4">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="5">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="main-container_goods_basic__block___name">
+                                <p class="name_goods">Свитер в полоску</p>
+                            </div>
+                            <div class="main-container_goods_basic__block___price">
+                                <div class="main-container_goods_basic__block___price____line"></div>
+                                <p class="price">123 грн</p>
+                            </div>
+                        </div>
+                        <div class="main-container_goods_basic__block">
+                            <div class="main-container_goods_basic__block___box">
+                                <div class="main-container_goods_basic__block___box____img">
+                                    <img src="img/dress3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="main-container_goods_basic__block___stars">
+                                <div class="stars" data-stars="1">
+                                    <svg height="25" width="23" class="star rating" data-rating="1">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="2">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="3">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="4">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="5">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="main-container_goods_basic__block___name">
+                                <p class="name_goods">Свитер в полоску</p>
+                            </div>
+                            <div class="main-container_goods_basic__block___price">
+                                <div class="main-container_goods_basic__block___price____line"></div>
+                                <p class="price">123 грн</p>
+                            </div>
+                        </div>
+                        <div class="main-container_goods_basic__block">
+                            <div class="main-container_goods_basic__block___box">
+                                <div class="main-container_goods_basic__block___box____img">
+                                    <img src="img/dress1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="main-container_goods_basic__block___stars">
+                                <div class="stars" data-stars="1">
+                                    <svg height="25" width="23" class="star rating" data-rating="1">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="2">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="3">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="4">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="5">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="main-container_goods_basic__block___name">
+                                <p class="name_goods">Свитер в полоску</p>
+                            </div>
+                            <div class="main-container_goods_basic__block___price">
+                                <div class="main-container_goods_basic__block___price____line"></div>
+                                <p class="price">123 грн</p>
+                            </div>
+                        </div>
+                        <div class="main-container_goods_basic__block">
+                            <div class="main-container_goods_basic__block___box">
+                                <div class="main-container_goods_basic__block___box____img">
+                                    <img src="img/dress2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="main-container_goods_basic__block___stars">
+                                <div class="stars" data-stars="1">
+                                    <svg height="25" width="23" class="star rating" data-rating="1">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="2">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="3">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="4">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="5">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="main-container_goods_basic__block___name">
+                                <p class="name_goods">Свитер в полоску</p>
+                            </div>
+                            <div class="main-container_goods_basic__block___price">
+                                <div class="main-container_goods_basic__block___price____line"></div>
+                                <p class="price">123 грн</p>
+                            </div>
+                        </div>
+                        <div class="main-container_goods_basic__block">
+                            <div class="main-container_goods_basic__block___box">
+                                <div class="main-container_goods_basic__block___box____img">
+                                    <img src="img/dress1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="main-container_goods_basic__block___stars">
+                                <div class="stars" data-stars="1">
+                                    <svg height="25" width="23" class="star rating" data-rating="1">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="2">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="3">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="4">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="5">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="main-container_goods_basic__block___name">
+                                <p class="name_goods">Свитер в полоску</p>
+                            </div>
+                            <div class="main-container_goods_basic__block___price">
+                                <div class="main-container_goods_basic__block___price____line"></div>
+                                <p class="price">123 грн</p>
+                            </div>
+                        </div>
+                        <div class="main-container_goods_basic__block">
+                            <div class="main-container_goods_basic__block___box">
+                                <div class="main-container_goods_basic__block___box____img">
+                                    <img src="img/dress3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="main-container_goods_basic__block___stars">
+                                <div class="stars" data-stars="1">
+                                    <svg height="25" width="23" class="star rating" data-rating="1">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="2">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="3">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="4">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="5">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="main-container_goods_basic__block___name">
+                                <p class="name_goods">Свитер в полоску</p>
+                            </div>
+                            <div class="main-container_goods_basic__block___price">
+                                <div class="main-container_goods_basic__block___price____line"></div>
+                                <p class="price">123 грн</p>
+                            </div>
+                        </div>
+                        <div class="main-container_goods_basic__block">
+                            <div class="main-container_goods_basic__block___box">
+                                <div class="main-container_goods_basic__block___box____img">
+                                    <img src="img/dress2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="main-container_goods_basic__block___stars">
+                                <div class="stars" data-stars="1">
+                                    <svg height="25" width="23" class="star rating" data-rating="1">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="2">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="3">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="4">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                    <svg height="25" width="23" class="star rating" data-rating="5">
+                                        <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                 style="fill-rule:nonzero;"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="main-container_goods_basic__block___name">
+                                <p class="name_goods">Свитер в полоску</p>
+                            </div>
+                            <div class="main-container_goods_basic__block___price">
+                                <div class="main-container_goods_basic__block___price____line"></div>
+                                <p class="price">123 грн</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="goods">Похожие товары</h2>
+                    <div class="main-container_goods_slider">
+                        <div class="main-container_goods_slider__slid">
+                            <div>
+                                <div class="main-container_goods_basic__block">
+                                    <div class="main-container_goods_basic__block___box">
+                                        <div class="main-container_goods_basic__block___box____img">
+                                            <img src="img/dress1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="main-container_goods_basic__block___stars">
+                                        <div class="stars" data-stars="1">
+                                            <svg height="25" width="23" class="star rating" data-rating="1">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                            <svg height="25" width="23" class="star rating" data-rating="2">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                            <svg height="25" width="23" class="star rating" data-rating="3">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                            <svg height="25" width="23" class="star rating" data-rating="4">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                            <svg height="25" width="23" class="star rating" data-rating="5">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="main-container_goods_basic__block___name">
+                                        <p class="name_goods">Свитер в полоску</p>
+                                    </div>
+                                    <div class="main-container_goods_basic__block___price">
+                                        <div class="main-container_goods_basic__block___price____line"></div>
+                                        <p class="price">123 грн</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="main-container_goods_basic__block">
+                                    <div class="main-container_goods_basic__block___box">
+                                        <div class="main-container_goods_basic__block___box____img">
+                                            <img src="img/dress3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="main-container_goods_basic__block___stars">
+                                        <div class="stars" data-stars="1">
+                                            <svg height="25" width="23" class="star rating" data-rating="1">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                            <svg height="25" width="23" class="star rating" data-rating="2">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                            <svg height="25" width="23" class="star rating" data-rating="3">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                            <svg height="25" width="23" class="star rating" data-rating="4">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                            <svg height="25" width="23" class="star rating" data-rating="5">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="main-container_goods_basic__block___name">
+                                        <p class="name_goods">Свитер в полоску</p>
+                                    </div>
+                                    <div class="main-container_goods_basic__block___price">
+                                        <div class="main-container_goods_basic__block___price____line"></div>
+                                        <p class="price">123 грн</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="main-container_goods_basic__block">
+                                    <div class="main-container_goods_basic__block___box">
+                                        <div class="main-container_goods_basic__block___box____img">
+                                            <img src="img/dress2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="main-container_goods_basic__block___stars">
+                                        <div class="stars" data-stars="1">
+                                            <svg height="25" width="23" class="star rating" data-rating="1">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                            <svg height="25" width="23" class="star rating" data-rating="2">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                            <svg height="25" width="23" class="star rating" data-rating="3">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                            <svg height="25" width="23" class="star rating" data-rating="4">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                            <svg height="25" width="23" class="star rating" data-rating="5">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="main-container_goods_basic__block___name">
+                                        <p class="name_goods">Свитер в полоску</p>
+                                    </div>
+                                    <div class="main-container_goods_basic__block___price">
+                                        <div class="main-container_goods_basic__block___price____line"></div>
+                                        <p class="price">123 грн</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="main-container_goods_basic__block">
+                                    <div class="main-container_goods_basic__block___box">
+                                        <div class="main-container_goods_basic__block___box____img">
+                                            <img src="img/dress3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="main-container_goods_basic__block___stars">
+                                        <div class="stars" data-stars="1">
+                                            <svg height="25" width="23" class="star rating" data-rating="1">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                            <svg height="25" width="23" class="star rating" data-rating="2">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                            <svg height="25" width="23" class="star rating" data-rating="3">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                            <svg height="25" width="23" class="star rating" data-rating="4">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                            <svg height="25" width="23" class="star rating" data-rating="5">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="main-container_goods_basic__block___name">
+                                        <p class="name_goods">Свитер в полоску</p>
+                                    </div>
+                                    <div class="main-container_goods_basic__block___price">
+                                        <div class="main-container_goods_basic__block___price____line"></div>
+                                        <p class="price">123 грн</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="main-container_goods_basic__block">
+                                    <div class="main-container_goods_basic__block___box">
+                                        <div class="main-container_goods_basic__block___box____img">
+                                            <img src="img/dress2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="main-container_goods_basic__block___stars">
+                                        <div class="stars" data-stars="1">
+                                            <svg height="25" width="23" class="star rating" data-rating="1">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                            <svg height="25" width="23" class="star rating" data-rating="2">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                            <svg height="25" width="23" class="star rating" data-rating="3">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                            <svg height="25" width="23" class="star rating" data-rating="4">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                            <svg height="25" width="23" class="star rating" data-rating="5">
+                                                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+                                                         style="fill-rule:nonzero;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="main-container_goods_basic__block___name">
+                                        <p class="name_goods">Свитер в полоску</p>
+                                    </div>
+                                    <div class="main-container_goods_basic__block___price">
+                                        <div class="main-container_goods_basic__block___price____line"></div>
+                                        <p class="price">123 грн</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="libs/jquery/jquery.js"></script>
+<script type="text/javascript" src="libs/slick.min.js"></script>
+<script type="text/javascript" src="libs/jquery.nicescroll-3.7.6/dist/jquery.nicescroll.js"></script>
+<script src="js/es6/common.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(' .main-container_goods_slider__slid').slick({
+            slidesToShow: 3,
+            // slidesToScroll: 3,
+            dots: true,
+            infinite: true,
+            prevArrow: '<span class="prev"></span>',
+            nextArrow: '<span class="next"></span>',
+
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                        // slidesToScroll: 2,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+
+        });
+        $('.star.rating').click(function () {
+            console.log($(this).parent().data('stars') + ", " + $(this).data('rating'));
+            $(this).parent().attr('data-stars', $(this).data('rating'));
+        });
+        // $('.scroll').niceScroll({
+        //     cursorcolor:"aquamarine",
+        //     cursorwidth:"16px"
+        // });
+        // $(window).scroll(function () {
+        //     $(".scroll").niceScroll({cursorcolor:"aquamarine"});
+        // })
+        // $(".scroll").niceScroll({cursorcolor:"aquamarine"});
+
+
+    })
+
+</script>
+</body>
+
+</html>

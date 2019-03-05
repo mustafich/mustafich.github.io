@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>ARSANI</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6, maximum-scale=0.6">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon"
+          href="data:image/png;base64,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"
+          type="image/x-icon">
+    <link rel="apple-touch-icon"
+          href="data:image/png;base64,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">
+    <link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid.css">
+    <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.background-video.css">
+    <link rel="stylesheet" href="libs/fullpage.js/dist/jquery.fullpage.css">
+    <link rel="stylesheet" href="libs/slick-master/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick-master/slick/slick-theme.css">
+    <link rel="stylesheet" href="libs/mmenu/mmenu.css">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+<header>
+    <div class="logo-box">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="social">
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div class="menu-box">
+        <div class="menu-item">
+            <a href="#auk">Наши аукционы</a>
+            <a href="#ab">О нас</a>
+            <a href="#bet">Преимущества</a>
+            <a href="#foot">Контакты</a>
+        </div>
+
+        <span class="but">меню
+            <button id="js_menu_button" class="menu_button">
+                <span class="menu_button_line top"></span>
+                <span class="menu_button_line mid"></span>
+                <span class="menu_button_line botm"></span>
+            </button>
+        </span>
+
+    </div>
+    <div class="square-box">
+        <div class="inner-suare">
+            <h1>Живопись и
+                антиквариат</h1>
+            <div class="tree-box">
+                <div class="im-box"><img src="img/icon1.png" alt="icon"></div>
+                <div class="city-box">Киев</div>
+                <div class="mounth-box">
+                    <p>осень 2018</p>
+                    <p>весна 2019</p>
+
+                </div>
+            </div>
+            <p class="square-text">
+                Открыт прием лотов на аукцион, приглашаем
+                к сотрудничеству владельцев живописи и
+                антиквариата.
+            </p>
+            <div class="button-box">
+                <a href="#" class="button " data-form>Принять участие</a>
+                <a href="#" class="button button-white" data-video="https://www.youtube.com/embed/YNSOOlezzds?autoplay=1">Смотреть видео</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="picture-box" style="background-image: url(img/girl.png);">
+    </div>
+    <div class="little little1">
+        <div class="text-box">
+            <h4>Вы хотите</h4>
+            <h2>купить</h2>
+            <h4>искусство?</h4>
+        </div>
+        <a href="#" class="button button-white" data-form>Оставить заявку</a>
+    </div>
+    <div class="little little2">
+        <div class="text-box">
+            <h4>Вы хотите</h4>
+            <h2>продать</h2>
+            <h4>искусство?</h4>
+        </div>
+        <a href="#" class="button button-white" data-form-sale>Заполнить форму</a>
+    </div>
+</header>
+
+
+<section class="slider-box" id="auk">
+    <h6>Наши аукционы</h6>
+    <!--<div class="tabs-box">-->
+        <!--<a href="#" class="button button-white active-tab">Все аукционы</a>-->
+        <!--<a href="#" class="button button-white">Live-аукционы</a>-->
+        <!--<a href="#" class="button button-white">Интернет-аукционы</a>-->
+    <!--</div>-->
+    <div class="slide-shoose">
+        <div class="slider active-box">
+            <div>
+                <div class="slide">
+                    <div class="img-box" style="background-image: url(img/girl1.png)">
+
+                    </div>
+                    <div class="top-box">
+                        <div class="inner-top">
+                            <h5>ЖИВОПИСЬ, НУМИЗМАТИКА И
+                                АНТИКВАРИАТ</h5>
+                            <div class="button-box">
+                                <a href="#" class="button " data-form>Оставить заявку</a>
+                                <a target="_blank" href="pdf/0.pdf" class="button button-white">Открыть каталог PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-box">
+                        <div class="tree-box">
+                            <div class="im-box"><img src="img/icon2.png" alt="icon"></div>
+                            <div class="mounth-box">
+                                <p>осень  2018</p>
+                                <p>весна  2019</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-box">
+                        <div class="tree-box">
+                            <div class="im-box"><img src="img/icon1.png" alt="icon"></div>
+                            <div class="city-box">
+                                Киев,
+                                ул. Шелковичная 17/2
+                                Шоколадный Домик
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="slide">
+                    <div class="img-box" style="background-image: url(img/girl2.png)">
+
+                    </div>
+                    <div class="top-box">
+                        <div class="inner-top">
+                            <h5>ЖИВОПИСЬ, НУМИЗМАТИКА И
+                                АНТИКВАРИАТ</h5>
+                            <div class="button-box">
+                                <a href="#" class="button " data-form>Оставить заявку</a>
+                                <a target="_blank" href="pdf/1.pdf" class="button button-white">Открыть каталог PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-box">
+                        <div class="tree-box">
+                            <div class="im-box"><img src="img/icon2.png" alt="icon"></div>
+                            <div class="mounth-box">
+                                <p>16 декабря 2016</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-box">
+                        <div class="tree-box">
+                            <div class="im-box"><img src="img/icon1.png" alt="icon"></div>
+                            <div class="city-box">
+                                Киев,
+                                ул. Шелковичная 17/2
+                                Шоколадный Домик
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="slide">
+                    <div class="img-box" style="background-image: url(img/m11.png)">
+
+                    </div>
+                    <div class="top-box">
+                        <div class="inner-top">
+                            <h5>ПРОИЗВЕДЕНИЯ ИСКУССТВА И АНТИКВАРИАТ</h5>
+                            <div class="button-box">
+                                <a href="#" class="button " data-form>Оставить заявку</a>
+                                <a href="pdf/2.pdf" class="button button-white">Открыть каталог PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-box">
+                        <div class="tree-box">
+                            <div class="im-box"><img src="img/icon2.png" alt="icon"></div>
+                            <div class="mounth-box">
+                                <p>26 апреля 2014</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-box">
+                        <div class="tree-box">
+                            <div class="im-box"><img src="img/icon1.png" alt="icon"></div>
+                            <div class="city-box">
+                                Харьков, ул.Артема, 43
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="slide">
+                    <div class="img-box" style="background-image: url(img/m12.png)">
+
+                    </div>
+                    <div class="top-box">
+                        <div class="inner-top">
+                            <h5>ПРОИЗВЕДЕНИЯ ИСКУССТВА И АНТИКВАРИАТ</h5>
+                            <div class="button-box">
+                                <a href="#" class="button " data-form="">Оставить заявку</a>
+                                <a href="pdf/3.pdf" class="button button-white">Открыть каталог PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-box">
+                        <div class="tree-box">
+                            <div class="im-box"><img src="img/icon2.png" alt="icon"></div>
+                            <div class="mounth-box">
+                                <p>
+                                    26 октября 2013</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-box">
+                        <div class="tree-box">
+                            <div class="im-box"><img src="img/icon1.png" alt="icon"></div>
+                            <div class="city-box">
+                                Kharkiv Palace Hotel, Харьков, проспект Правды, 2
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="slide">
+                    <div class="img-box" style="background-image: url(img/m13.png)">
+
+                    </div>
+                    <div class="top-box">
+                        <div class="inner-top">
+                            <h5>ПРОИЗВЕДЕНИЯ ИСКУССТВА И АНТИКВАРИАТ</h5>
+                            <div class="button-box">
+                                <a href="#" class="button " data-form>Оставить заявку</a>
+                                <a href="pdf/4.pdf" class="button button-white">Открыть каталог PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-box">
+                        <div class="tree-box">
+                            <div class="im-box"><img src="img/icon2.png" alt="icon"></div>
+                            <div class="mounth-box">
+                                <p>
+                                    17 ноября 2012 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-box">
+                        <div class="tree-box">
+                            <div class="im-box"><img src="img/icon1.png" alt="icon"></div>
+                            <div class="city-box">
+                                Харьков, ул.Артема, 43
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="slide">
+                    <div class="img-box" style="background-image: url(img/m14.png)">
+
+                    </div>
+                    <div class="top-box">
+                        <div class="inner-top">
+                            <h5>ЕВРОПЕЙСКАЯ ЖИВОПИСЬ И АНТИКВАРИАТ</h5>
+                            <div class="button-box">
+                                <a href="#" class="button " data-form>Оставить заявку</a>
+                                <a href="pdf/5.pdf" class="button button-white">Открыть каталог PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-box">
+                        <div class="tree-box">
+                            <div class="im-box"><img src="img/icon2.png" alt="icon"></div>
+                            <div class="mounth-box">
+                                <p>
+
+                                    7 апреля 2012 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-box">
+                        <div class="tree-box">
+                            <div class="im-box"><img src="img/icon1.png" alt="icon"></div>
+                            <div class="city-box">
+                                Харьков, ул.Артема, 43
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="slide">
+                    <div class="img-box" style="background-image: url(img/m15.png)">
+
+                    </div>
+                    <div class="top-box">
+                        <div class="inner-top">
+                            <h5>МИРОВАЯ ЖИВОПИСЬ И АНТИКВАРИАТ </h5>
+                            <div class="button-box">
+                                <a href="#" class="button " data-form>Оставить заявку</a>
+                                <a href="pdf/6.pdf" class="button button-white">Открыть каталог PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-box">
+                        <div class="tree-box">
+                            <div class="im-box"><img src="img/icon2.png" alt="icon"></div>
+                            <div class="mounth-box">
+                                <p>
+
+                                    29 октября 2011 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-box">
+                        <div class="tree-box">
+                            <div class="im-box"><img src="img/icon1.png" alt="icon"></div>
+                            <div class="city-box">
+                                Харьков, ул.Артема, 43
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="slider">-->
+            <!--<div>-->
+                <!--<div class="slide">-->
+                    <!--<div class="img-box" style="background-image: url(img/girl1.png)">-->
+
+                    <!--</div>-->
+                    <!--<div class="top-box">-->
+                        <!--<div class="inner-top">-->
+                            <!--<h5>ЖИВОПИСЬ, НУМИЗМАТИКА И-->
+                                <!--АНТИКВАРИАТ</h5>-->
+                            <!--<div class="button-box">-->
+                                <!--<a href="#" class="button ">Оставить заявку</a>-->
+                                <!--<a href="#" class="button button-white">Открыть каталог PDF</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="left-box">-->
+                        <!--<div class="tree-box">-->
+                            <!--<div class="im-box"><img src="img/icon2.png" alt="icon"></div>-->
+                            <!--<div class="mounth-box">-->
+                                <!--<p>16 декабря 2016</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="right-box">-->
+                        <!--<div class="tree-box">-->
+                            <!--<div class="im-box"><img src="img/icon1.png" alt="icon"></div>-->
+                            <!--<div class="city-box">-->
+                                <!--Киев,-->
+                                <!--ул. Шелковичная 17/2-->
+                                <!--Шоколадный Домик-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<div class="slide">-->
+                    <!--<div class="img-box" style="background-image: url(img/girl2.png)">-->
+
+                    <!--</div>-->
+                    <!--<div class="top-box">-->
+                        <!--<div class="inner-top">-->
+                            <!--<h5>ЖИВОПИСЬ, НУМИЗМАТИКА И-->
+                                <!--АНТИКВАРИАТ</h5>-->
+                            <!--<div class="button-box">-->
+                                <!--<a href="#" class="button ">Оставить заявку</a>-->
+                                <!--<a href="#" class="button button-white">Открыть каталог PDF</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="left-box">-->
+                        <!--<div class="tree-box">-->
+                            <!--<div class="im-box"><img src="img/icon2.png" alt="icon"></div>-->
+                            <!--<div class="mounth-box">-->
+                                <!--<p>16 декабря 2016</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="right-box">-->
+                        <!--<div class="tree-box">-->
+                            <!--<div class="im-box"><img src="img/icon1.png" alt="icon"></div>-->
+                            <!--<div class="city-box">-->
+                                <!--Киев,-->
+                                <!--ул. Шелковичная 17/2-->
+                                <!--Шоколадный Домик-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<div class="slide">-->
+                    <!--<div class="img-box" style="background-image: url(img/girl1.png)">-->
+
+                    <!--</div>-->
+                    <!--<div class="top-box">-->
+                        <!--<div class="inner-top">-->
+                            <!--<h5>ЖИВОПИСЬ, НУМИЗМАТИКА И-->
+                                <!--АНТИКВАРИАТ</h5>-->
+                            <!--<div class="button-box">-->
+                                <!--<a href="#" class="button ">Оставить заявку</a>-->
+                                <!--<a href="#" class="button button-white">Открыть каталог PDF</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="left-box">-->
+                        <!--<div class="tree-box">-->
+                            <!--<div class="im-box"><img src="img/icon2.png" alt="icon"></div>-->
+                            <!--<div class="mounth-box">-->
+                                <!--<p>16 декабря 2016</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="right-box">-->
+                        <!--<div class="tree-box">-->
+                            <!--<div class="im-box"><img src="img/icon1.png" alt="icon"></div>-->
+                            <!--<div class="city-box">-->
+                                <!--Киев,-->
+                                <!--ул. Шелковичная 17/2-->
+                                <!--Шоколадный Домик-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<div class="slide">-->
+                    <!--<div class="img-box" style="background-image: url(img/girl1.png)">-->
+
+                    <!--</div>-->
+                    <!--<div class="top-box">-->
+                        <!--<div class="inner-top">-->
+                            <!--<h5>ЖИВОПИСЬ, НУМИЗМАТИКА И-->
+                                <!--АНТИКВАРИАТ</h5>-->
+                            <!--<div class="button-box">-->
+                                <!--<a href="#" class="button ">Оставить заявку</a>-->
+                                <!--<a href="#" class="button button-white">Открыть каталог PDF</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="left-box">-->
+                        <!--<div class="tree-box">-->
+                            <!--<div class="im-box"><img src="img/icon2.png" alt="icon"></div>-->
+                            <!--<div class="mounth-box">-->
+                                <!--<p>16 декабря 2016</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="right-box">-->
+                        <!--<div class="tree-box">-->
+                            <!--<div class="im-box"><img src="img/icon1.png" alt="icon"></div>-->
+                            <!--<div class="city-box">-->
+                                <!--Киев,-->
+                                <!--ул. Шелковичная 17/2-->
+                                <!--Шоколадный Домик-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="slider">-->
+            <!--<div>-->
+                <!--<div class="slide">-->
+                    <!--<div class="img-box" style="background-image: url(img/girl1.png)">-->
+
+                    <!--</div>-->
+                    <!--<div class="top-box">-->
+                        <!--<div class="inner-top">-->
+                            <!--<h5>ЖИВОПИСЬ, НУМИЗМАТИКА И-->
+                                <!--АНТИКВАРИАТ</h5>-->
+                            <!--<div class="button-box">-->
+                                <!--<a href="#" class="button ">Оставить заявку</a>-->
+                                <!--<a href="#" class="button button-white">Открыть каталог PDF</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="left-box">-->
+                        <!--<div class="tree-box">-->
+                            <!--<div class="im-box"><img src="img/icon2.png" alt="icon"></div>-->
+                            <!--<div class="mounth-box">-->
+                                <!--<p>16 декабря 2016</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="right-box">-->
+                        <!--<div class="tree-box">-->
+                            <!--<div class="im-box"><img src="img/icon1.png" alt="icon"></div>-->
+                            <!--<div class="city-box">-->
+                                <!--Киев,-->
+                                <!--ул. Шелковичная 17/2-->
+                                <!--Шоколадный Домик-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<div class="slide">-->
+                    <!--<div class="img-box" style="background-image: url(img/girl1.png)">-->
+
+                    <!--</div>-->
+                    <!--<div class="top-box">-->
+                        <!--<div class="inner-top">-->
+                            <!--<h5>ЖИВОПИСЬ, НУМИЗМАТИКА И-->
+                                <!--АНТИКВАРИАТ</h5>-->
+                            <!--<div class="button-box">-->
+                                <!--<a href="#" class="button ">Оставить заявку</a>-->
+                                <!--<a href="#" class="button button-white">Открыть каталог PDF</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="left-box">-->
+                        <!--<div class="tree-box">-->
+                            <!--<div class="im-box"><img src="img/icon2.png" alt="icon"></div>-->
+                            <!--<div class="mounth-box">-->
+                                <!--<p>16 декабря 2016</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="right-box">-->
+                        <!--<div class="tree-box">-->
+                            <!--<div class="im-box"><img src="img/icon1.png" alt="icon"></div>-->
+                            <!--<div class="city-box">-->
+                                <!--Киев,-->
+                                <!--ул. Шелковичная 17/2-->
+                                <!--Шоколадный Домик-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<div class="slide">-->
+                    <!--<div class="img-box" style="background-image: url(img/girl1.png)">-->
+
+                    <!--</div>-->
+                    <!--<div class="top-box">-->
+                        <!--<div class="inner-top">-->
+                            <!--<h5>ЖИВОПИСЬ, НУМИЗМАТИКА И-->
+                                <!--АНТИКВАРИАТ</h5>-->
+                            <!--<div class="button-box">-->
+                                <!--<a href="#" class="button ">Оставить заявку</a>-->
+                                <!--<a href="#" class="button button-white">Открыть каталог PDF</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="left-box">-->
+                        <!--<div class="tree-box">-->
+                            <!--<div class="im-box"><img src="img/icon2.png" alt="icon"></div>-->
+                            <!--<div class="mounth-box">-->
+                                <!--<p>16 декабря 2016</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="right-box">-->
+                        <!--<div class="tree-box">-->
+                            <!--<div class="im-box"><img src="img/icon1.png" alt="icon"></div>-->
+                            <!--<div class="city-box">-->
+                                <!--Киев,-->
+                                <!--ул. Шелковичная 17/2-->
+                                <!--Шоколадный Домик-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<div class="slide">-->
+                    <!--<div class="img-box" style="background-image: url(img/girl1.png)">-->
+
+                    <!--</div>-->
+                    <!--<div class="top-box">-->
+                        <!--<div class="inner-top">-->
+                            <!--<h5>ЖИВОПИСЬ, НУМИЗМАТИКА И-->
+                                <!--АНТИКВАРИАТ</h5>-->
+                            <!--<div class="button-box">-->
+                                <!--<a href="#" class="button ">Оставить заявку</a>-->
+                                <!--<a href="#" class="button button-white">Открыть каталог PDF</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="left-box">-->
+                        <!--<div class="tree-box">-->
+                            <!--<div class="im-box"><img src="img/icon2.png" alt="icon"></div>-->
+                            <!--<div class="mounth-box">-->
+                                <!--<p>16 декабря 2016</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="right-box">-->
+                        <!--<div class="tree-box">-->
+                            <!--<div class="im-box"><img src="img/icon1.png" alt="icon"></div>-->
+                            <!--<div class="city-box">-->
+                                <!--Киев,-->
+                                <!--ул. Шелковичная 17/2-->
+                                <!--Шоколадный Домик-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    </div>
+</section>
+
+<section class="about" id="ab" style="background-image: url(img/about.png)">
+    <h6>О нас</h6>
+    <div class="about-inner">
+        <div class="about-big">
+            <p class="title-new-p">
+                Несколько фактов о нас:
+            </p>
+            <p>
+                - Аукцион ARSANI основан в 1995 году.
+            </p>
+            <p>
+                - На торгах ARSANI выставляются шедевры мирового
+                уровня известных мастеров. Благодаря ARSANI владельцы
+                произведений искусства находят квалифицированную
+                помощь в продаже произведений искусства, получают
+                прозрачность во взаимоотношениях и ценообразовании.
+            </p>
+            <p>
+                - За плечами ARSANI - множество выставочных проектов и
+                более 10 аукционов, на которых были представлены картины
+                известных художников: Клод Моне, Сальвадор Дали,
+                Иван Айвазовский, Сергей Васильковский, Илья Репин,
+                Константин Маковский и другие значимые живописцы.
+            </p>
+            <p>
+                - Клиенты аукциона ARSANI - частные коллекционеры и
+                организации со значительными собраниями произведений
+                искусства. Экспертность и профессионализм аукциона
+                ARSANI позволяет находить необходимые для клиентов
+                предметы искусства, тем самым увеличивая целостность,
+                значимость и аутентичность их собраний.
+            </p>
+            <p>
+                - В своей деятельности Аукцион ARSANI придерживается
+                Кодекса Этики Всемирной Конфедерации Арт Дилеров и
+                Антикваров CINOA и соблюдает полную конфиденциальность.
+                Сотрудничая с Аукционом ARSANI Вы получите высококлассный
+                сервис и эстетическое удовольствие.
+            </p>
+        </div>
+        <div class="about-middle">
+            <p class="title-new-p">
+                Мы направляем свою деятельность на:
+            </p>
+            <p>
+                Изучение спроса и предложений
+                на данном рынке ;
+            </p>
+            <p>
+                Анализ статистики и тенденций
+                направлений в данной области ;
+            </p>
+            <p>
+                Обмен опытом с партнерами и
+                коллегами ;
+            </p>
+            <p>
+                Внедрение новых технологий и
+                технологической базы ;
+            </p>
+            <p>
+                Разработку специализированных
+                систем информационного и
+                информационно-справочного
+                характера.
+            </p>
+
+        </div>
+        <div class="about-small">
+            <p class="title-new-p">
+                Вы - коллекционер и Вам необходима
+                помощь в поиске предметов искусства
+                или в их продаже?
+
+            </p>
+            <p>
+                Оставьте заявку, и мы обязательно свяжемся
+                с Вами в ближайшее время!
+
+            </p>
+            <a href="#" class="button" data-form="">Оставить заявку</a>
+        </div>
+    </div>
+
+</section>
+
+<section class="better" id="bet">
+    <h6>Преимущества</h6>
+    <div class="container">
+        <div class="row">
+            <div class="better-inner">
+                <div class="in-box">
+                    <img src="img/b1.png" alt="">
+                    <p class="top-p">Для ценителей</p>
+                    <p class="bottom-p">
+                        У нас - только шедевры
+                        мирового уровня
+                        известных мастеров
+                    </p>
+                </div>
+
+                <div class="in-box">
+                    <img src="img/b2.png" alt="">
+                    <p class="top-p">Богатый опыт</p>
+                    <p class="bottom-p">
+                        За плечами - множество
+                        выставочных проектов и
+                        более 10 аукционов
+                    </p>
+                </div>
+
+                <div class="in-box">
+                    <img src="img/b3.png" alt="">
+                    <p class="top-p">никаких тайн</p>
+                    <p class="bottom-p">
+                        Прозрачность во
+                        взаимоотношениях и
+                        ценообразовании
+                    </p>
+                </div>
+
+                <div class="in-box">
+                    <img src="img/b4.png" alt="">
+                    <p class="top-p">помощь экспертов</p>
+                    <p class="bottom-p">
+                        Профессиональная оценка
+                        антиквариата, предметов
+                        старины и произведений
+                        искусства
+                    </p>
+                </div>
+
+                <div class="in-box">
+                    <img src="img/b5.png" alt="">
+                    <p class="top-p">правовая поддержка</p>
+                    <p class="bottom-p">
+                        Решение разнообразных
+                        юридических вопросов,
+                        связанных с коллекционной
+                        деятельностью
+                    </p>
+                </div>
+
+                <div class="in-box">
+                    <img src="img/b6.png" alt="">
+                    <p class="top-p">высококлассный сервис</p>
+                    <p class="bottom-p">
+                        Выезд специалиста к
+                        заказчику для оценки
+                        коллекций по всему миру
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<header class="footer" id="foot">
+    <div class="logo-box">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <a href="https://bastard.studio/" target="_blank">Разработано Bastard Studio © 2018</a>
+
+    </div>
+    <div class="menu-box">
+        <h6>Контакты</h6>
+    </div>
+    <div class="square-box">
+        <div class="inner-suare">
+            <p class="footer-p">наши адреса:</p>
+            <div class="tree-box">
+                <div class="im-box"><img src="img/icon1.png" alt="icon"></div>
+                <div class="mounth-box">
+                    <p>Киев, Шелковичная, 17/2</p>
+                </div>
+            </div>
+            <div class="tree-box">
+                <div class="im-box"><img src="img/icon3.png" alt="icon"></div>
+                <div class="mounth-box">
+                    <a href="tel:+380935725777">093-572-5777</a>
+                    <a href="tel:+380689525252">068-952-5252</a>
+                </div>
+            </div>
+            <div class="tree-box">
+                <div class="im-box"><img src="img/icon1.png" alt="icon"></div>
+                <div class="mounth-box">
+                    <p>Харьков,
+                        Ул.Алчевских, 43</p>
+                </div>
+            </div>
+            <div class="tree-box">
+                <div class="im-box"><img src="img/icon3.png" alt="icon"></div>
+                <div class="mounth-box">
+                    <a href="tel:+380577805777">057-780-5777</a>
+                    <a href="tel:+380969515777">096-951-5777</a>
+                </div>
+            </div>
+
+            <div class="button-box">
+                <a href="#" class="button " data-form="">Заказать звонок</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="picture-box" style="background-image: url(img/fbg.png);">
+    </div>
+    <div class="little little1">
+        <p class="footer-p">мы в соц.сетях: </p>
+        <div class="social">
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div class="little little2">
+        <p class="footer-p">Наш e-mail: </p>
+        <a href="mailto:auction@arsani.ua">auction@arsani.ua</a>
+    </div>
+</header>
+
+
+<div class="thank-you thank-you-finish">
+    <div class="dark">
+        <div class="thank-you-window tho">
+            <div class="button-crest">
+                <img src="img/crb.png" alt="image">
+            </div>
+            <div class="inner-pop">
+                Благодарим за обращение!
+                Мы скоро с Вами свяжемся.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="thank-you thank-you-video">
+    <div class="dark">
+        <div class="thank-you-window ">
+            <div class="button-crest">
+                <img src="img/crb.png" alt="image">
+            </div>
+            <div class="inner-pop-video">
+                <iframe
+                        src=""
+                        frameborder="0" allow="autoplay; encrypted-media"
+                        allowfullscreen>
+
+                </iframe>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="thank-you thank-you-form">
+    <div class="thank-you-window">
+        <div class="left1">
+            <img src="img/pop.png" alt="item">
+        </div>
+        <div class="right1">
+            <div class="button-crest">
+                <img src="img/crb.png" alt="image">
+            </div>
+            <h6>Оформление заявки</h6>
+            <form action="">
+                <span style="display: none;">
+                  <input type="hidden" name="Категория" value="Покупка">
+                </span>
+
+                <input type="text" name="name" placeholder="Ваше имя">
+                <input type="text" name="phone" placeholder="+38 (___) ___-__-__">
+                <input type="text" name="mail" placeholder="E-mail">
+                <textarea name="text" placeholder="Текст Вашего сообщения"></textarea>
+                <input type="submit" class="button button-black chef-b" value="Оставить заявку">
+            </form>
+        </div>
+    </div>
+</div>
+<div class="thank-you thank-you-form-sale">
+    <div class="thank-you-window">
+        <div class="left1">
+            <img src="img/pop.png" alt="item">
+        </div>
+        <div class="right1">
+            <div class="button-crest">
+                <img src="img/crb.png" alt="image">
+            </div>
+            <h6>Оформление продажи</h6>
+            <form action="">
+              <span style="display: none;">
+                    <input type="hidden" name="form" value="Продажа">
+                </span>
+
+                <input type="text" name="name" placeholder="Ваше имя">
+                <input type="text" name="phone" placeholder="+38 (___) ___-__-__">
+                <input type="text" name="mail" placeholder="E-mail">
+                <textarea name="text" placeholder="Текст Вашего сообщения"></textarea>
+                <input type="submit" class="button button-black chef-b" value="Отправить заявку">
+            </form>
+        </div>
+    </div>
+</div>
+<script src="libs/jquery/jquery.js"></script>
+<!--<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
+<!--<script src="libs/mmenu/mmenu.js"></script>-->
+<script src="libs/slick-master/slick/slick.js"></script>
+<!--<script src="libs/TweenMax.min.js"></script>-->
+<!--<script src="libs/jquery.nicescroll-3.7.6/jquery.nicescroll.min.js"></script>-->
+
+
+<!--<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>-->
+<!--<script src="libs/fullpage.js/vendors/scrolloverflow.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.min.js"></script>-->
+<!--<script src="libs/fullpage.js/dist/jquery.fullpage.extensions.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>-->
+
+<script src="js/common.js"></script>
+
+</body>
+
+</html>
+<!--<div class="rating">-->
+<!--<div class="stars-block">-->
+<!--<label>★<input  type="radio" name="stars" value="5"></label>-->
+<!--<label>★<input  type="radio" name="stars" value="4"></label>-->
+<!--<label>★<input  type="radio" name="stars" value="3"></label>-->
+<!--<label>★<input  type="radio" name="stars" value="2"></label>-->
+<!--<label>★<input  type="radio" name="stars" value="1"></label>-->
+<!--</div>-->
+<!--<a class="voices"><span>9</span> Отзывов</a>-->
+<!--</div>-->

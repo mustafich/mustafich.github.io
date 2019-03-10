@@ -4,10 +4,6 @@
 var menu = document.querySelector(".header-menu");
 var header = document.querySelector(".header");
 
-
-
-
-
 window.onscroll = function () {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -15,73 +11,95 @@ window.onscroll = function () {
     if (scrolled > menu.offsetHeight) {
         menu.classList.add("header-fixed");
         header.style.paddingTop = menu.offsetHeight + "px";
-    }
-    else {
+    } else {
 
         menu.classList.remove("header-fixed");
         header.style.paddingTop = 0;
     }
-
-
-    // var section = document.querySelectorAll("section");
-    // var a = document.querySelectorAll("a.activer");
-    // section.forEach(function (element) {
-    //
-    //     var top = element.offsetTop;
-    //     var topp = top - 300;
-    //
-    //     var bottom = topp + element.offsetHeight;
-    //
-    //     var scroll = window.pageYOffset || document.documentElement.scrollTop;
-    //
-    //     var id = element.getAttribute('id');
-    //
-    //     if (scroll > topp && scroll < bottom) {
-    //
-    //         a.forEach(function (x) {
-    //             x.classList.remove("activer");
-    //         })
-    //
-    //         $('a[href="#' + id + '"]').addClass('activer');
-    //     }
-    //
-    // })
-
 };
-//
-// function func () {
-//     $("ul").on("click","a", function (event) {
-//         // исключаем стандартную реакцию браузера
-//         event.preventDefault();
-//
-//
-//         // получем идентификатор блока из атрибута href
-//         var id  = $(this).attr('href'),
-//
-//             // находим высоту, на которой расположен блок
-//             top = $(id).offset().top;
-//
-//         // анимируем переход к блоку, время: 800 мс
-//         $('body,html').animate({scrollTop: top}, 800);
-//     });
-// }
-// func();
 
 
+toursHot = document.querySelector(".tours-block_hot");
+toursPopular = document.querySelector(".tours-block_popular");
+tab = document.querySelectorAll(".tabTop");
+info = document.querySelector(".tours-block");
+tabContent = document.querySelectorAll(".tab");
 
 
-// let menuBtn = document.querySelector(".header-menu_block__menuMobile"),
-//     menuPop = document.querySelector('.menuMob'),
-//     close = document.querySelectorAll('.menuMob ul li');
-//
-// menuBtn.addEventListener('click',function () {
-//     menuPop.style.top = 0;
-// })
-// close.forEach(function (value) {
-//     value.addEventListener('click',function () {
-//         menuPop.style.top = -1000 + "px";
-//     })
-// })
+toursHot.addEventListener("click", function () {
+    toursHot.classList.add("toursActiver");
+    toursPopular.classList.remove("toursActiver");
+});
+toursPopular.addEventListener("click", function () {
+    toursPopular.classList.add("toursActiver");
+    toursHot.classList.remove("toursActiver");
+});
+
+function hide(a) {
+    for (var i = a; i < tabContent.length; i++) {
+        tabContent[i].classList.add("hide");
+    }
+}
+
+hide(1);
+
+function show(b) {
+
+    if (tabContent[b].classList.contains("hide")) {
+        tabContent[b].classList.remove('hide');
+
+    }
+
+}
+
+info.addEventListener("click", function (event) {
+
+    var target = event.target;
+    if (target && target.classList.contains("tabTop")) {
+        hide(0);
+        for (var i = 0; i < tab.length; i++) {
+            if (target === tab[i]) {
+                hide(0);
+                show(i);
+                break
+            }
+        }
+    }
+});
+
+
+///////////////////slider/////////////////////
+
+
+var headerSlider = document.querySelector(".header-slider");
+var slider = document.querySelector(".slider");
+
+function sliderAdd() {
+    headerSlider.classList.add("bg0");
+    // header.classList.add("bg1");
+    // header.classList.add("bg2");
+    headerSlider.style.opacity = "1";
+
+}
+sliderAdd();
+sliderDots = document.querySelectorAll(".slider-dots");
+    sliderDots.forEach((item, i) => {
+        item.addEventListener("click", function (event) {
+            sliderDots.forEach(function (items) {
+                items.classList.remove("slider-active");
+            });
+            if (event.target.tagName === "DIV") {
+                sliderDots[i].classList.add("slider-active");
+                for (var z = -100;z < 100;z++) {
+                    headerSlider.classList.remove(`bg${i + z}`);
+                    headerSlider.classList.remove(`bg${i - z}`);
+                    headerSlider.classList.remove(`bg${i + z}`);
+                }
+
+                headerSlider.classList.add(`bg${i}`);
+            }
+        });
+    });
 
 }());
 

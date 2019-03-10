@@ -1422,7 +1422,7 @@ hr {
 }
 
 .hide {
-    display: none !important
+    /*display: none !important*/
 }
 
 .show {

@@ -1,0 +1,62 @@
+li {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-bottom: -1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+i {
+  font-size: 28px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.btnLi {
+  background-color: transparent;
+  background-image: none;
+  width: 35px;
+  padding: 5px;
+  margin: 15px 5px 15px 5px;
+  outline: none;
+}
+
+button:active, button:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.btn-remove {
+  border-radius: 10px;
+  color: #dc3545;
+  border: 1px solid red;
+}
+.btn-important {
+  border-radius: 10px;
+  color: #28a745;
+  border: 1px solid green;
+}
+
+.btn-remove:hover {
+  transition: 1s;
+  background: #dc3545;
+}
+.btn-remove:hover .fa-trash-o {
+  transition: 1s;
+  color: black;
+}
+
+.btn-important:hover {
+  transition: 1s;
+  background: limegreen;
+}
+.btn-important:hover .fa-exclamation {
+  transition: 1s;
+  color: black;
+}
+
+/*# sourceMappingURL=todo-list.css.map */

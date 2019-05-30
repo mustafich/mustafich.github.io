@@ -1,0 +1,32 @@
+span {
+  padding: 5px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+h3 {
+  font-size: 18px;
+  margin-left: 30px;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.importantdSpan {
+  color: red;
+}
+.importantdSpan h3 {
+  color: red !important;
+  font-weight: 900 !important;
+}
+
+.flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=todo-list-item.css.map */
